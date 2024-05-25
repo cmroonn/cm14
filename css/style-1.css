@@ -23385,7 +23385,46 @@ a, span[role=button] {
 
 @media (max-width: 500px) {
 
+  .popup-student-result__head {
+    margin-top: calc(17 / 360 * 100vw);
+  }
 
+  .popup-student-result__head__text {
+    max-width: calc(175 / 360 * 100vw);
+    margin-left: calc(20 / 360 * 100vw);
+  }
+  
+  .popup-student-result__head__text h4 {
+    font-size: calc(16 / 360 * 100vw);
+    margin-bottom: calc(5 / 360 * 100vw);
+  }
+
+  .popup-student-result__head__text p {
+    font-size: calc(14 / 360 * 100vw);
+    margin-bottom: calc(5 / 360 * 100vw);
+  }
+  .popup-student-result {
+    padding: calc(10 / 360 * 100vw);
+    max-width: calc(340 / 360 * 100vw);
+  }
+
+  .popup-student-result__body {
+    margin-top: calc(20 / 360 * 100vw);
+    font-size: calc(14 / 360 * 100vw);
+    padding: calc(20 / 360 * 100vw);
+    border-radius: calc(10 / 360 * 100vw);
+  }
+
+
+  .popup-student-result__head__rate {
+    display: none;
+  }
+
+  .popup-student-result__head img {
+    width: calc(80 / 360 * 100vw);
+    height: calc(80 / 360 * 100vw);
+    margin-left: calc(20 / 360 * 100vw);
+  }
 
   .welcome.welcome-14 {
     background-image: url("../images/bg-mob-min.png");
