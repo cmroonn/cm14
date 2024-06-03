@@ -121,6 +121,19 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   try {
+    var buttons = document.querySelectorAll(".open-honorboard-popup");
+    buttons.forEach(function (btn) {
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        openPopup("popupHonorBoard");
+      });
+  });
+  } catch (e) {
+    console.log(e);
+  }
+
+  try {
     var _buttonsTelegram = document.querySelectorAll(".open-social-popup");
     _buttonsTelegram.forEach(function (btn) {
       btn.addEventListener("click", function (e) {
