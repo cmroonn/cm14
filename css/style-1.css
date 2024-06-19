@@ -23639,6 +23639,9 @@ a, span[role=button] {
     margin-right: auto;
     display: block;
     margin-top: calc(20 / 360 * 100vw);
+    width: calc(306 / 360 * 100vw);
+    height: calc(60 / 360 * 100vw);
+    font-size: calc(16 / 360 * 100vw);
   }
 
   #popupHonorBoard .popup-basic__title {
@@ -23653,3 +23656,41 @@ a, span[role=button] {
 }
 
 
+
+
+
+
+/** Partners block **/
+
+.partners {
+  margin: calc(150 / 1600 * 100vw);
+}
+.partners__inner {
+  padding: 0 calc(30 / 1600 * 100vw);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: calc(20 / 1600 * 100vw);
+  margin-top: calc(40 / 1600 * 100vw);
+}
+
+.partners__inner img {
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .partners__inner {
+    grid-template-columns: 1fr;
+    padding: 0 calc(20 / 360 * 100vw);
+    margin-top: calc(30 / 360 * 100vw);
+    gap: calc(20 / 360 * 100vw);
+  }
+
+  .partners {
+    margin: calc(80 / 360 * 100vw) 0;
+    
+  }
+
+  .partners .section-title {
+    padding: 0 calc(30 / 360 * 100vw);
+  }
+}
