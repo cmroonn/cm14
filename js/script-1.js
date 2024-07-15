@@ -1513,8 +1513,31 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   try {
-    const btns = document.querySelectorAll(".video-reviews__btn");
-    const sliders = document.querySelectorAll(".video-reviews__swiper");
+    const btns = document.querySelectorAll(".video-reviews .video-reviews__btn");
+    const sliders = document.querySelectorAll(".video-reviews .video-reviews__swiper");
+
+    btns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        const btnId = btn.dataset.id;
+        btns.forEach(btn => btn.classList.remove('active'));
+
+        sliders.forEach(function(slider) {
+          slider.classList.remove("active");
+          if (btnId === slider.dataset.id) {
+            slider.classList.add('active');
+            btn.classList.add('active');
+          }
+        });
+
+      });
+    })
+  } catch(e) {
+    console.log(e);
+  }
+
+  try {
+    const btns = document.querySelectorAll(".reviews-2 .video-reviews__btn");
+    const sliders = document.querySelectorAll(".reviews-2 .reviews-2__content");
 
     btns.forEach(function(btn) {
       btn.addEventListener('click', function() {
