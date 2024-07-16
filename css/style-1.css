@@ -23477,6 +23477,10 @@ a, span[role=button] {
   position: relative;
 }
 
+.categories__item p {
+  white-space: nowrap;
+}
+
 .categories__item img {
   position: absolute;
   left: calc(-38 / 1600 * 100vw);
